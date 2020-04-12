@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "box",
+    "_name": "bulletFriendly",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -45,8 +45,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 7,
+      "height": 7
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -60,30 +60,30 @@
         0,
         0,
         0,
-        0.3535533905932738,
-        0.3535533905932738,
-        -0.14644660940672624,
-        0.8535533905932737,
-        7.106,
-        7.106,
-        7.106
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
       ]
     },
     "_eulerAngles": {
       "__type__": "cc.Vec3",
-      "x": 45,
-      "y": 45,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
-    "_is3DNode": true,
+    "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
     "_id": ""
   },
   {
-    "__type__": "cc.MeshRenderer",
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -92,69 +92,84 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "a5849239-3ad3-41d1-8ab4-ae9fea11f97f"
+        "__uuid__": "1977ce67-c536-4f39-896d-5f4e6e852128"
       }
     ],
-    "_mesh": {
-      "__uuid__": "046f172c-1574-488b-bbb8-6415a9adb96d"
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "b93e4c26-c107-4867-a92c-3f2275f7c95f"
     },
-    "_receiveShadows": false,
-    "_shadowCastingMode": 0,
-    "_enableAutoBatch": false,
-    "textures": [],
-    "_id": ""
-  },
-  {
-    "__type__": "a8c09tZY2VDqrQSPqGEU/4v",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "radius": 22,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.RigidBody",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_type": 2,
-    "_allowSleep": true,
-    "_gravityScale": 1,
-    "_linearDamping": 0,
-    "_angularDamping": 0,
-    "_linearVelocity": {
-      "__type__": "cc.Vec2",
-      "x": 400,
-      "y": 0
-    },
-    "_angularVelocity": 400,
-    "_fixedRotation": false,
-    "enabledContactListener": false,
-    "bullet": false,
-    "awakeOnLoad": true,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.CircleCollider",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "tag": 0,
-    "_offset": {
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
       "y": 0
     },
-    "_radius": 0.4,
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "0cacaaL7wJMEK5ita7Mwnlq",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "pickRadius": 81,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.RigidBody3D",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_mass": 10,
+    "_linearDamping": 0.1,
+    "_angularDamping": 0.1,
+    "_fixedRotation": false,
+    "_isKinematic": false,
+    "_useGravity": true,
+    "_linearFactor": {
+      "__type__": "cc.Vec3",
+      "x": 100,
+      "y": 100,
+      "z": 100
+    },
+    "_angularFactor": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.SphereCollider3D",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_material": null,
+    "_isTrigger": false,
+    "_center": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_radius": 30,
     "_id": ""
   },
   {
@@ -163,9 +178,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "3098baa9-014e-4ad4-bb10-6854a5202acf"
+      "__uuid__": "e5963676-6a7a-4e4d-ac99-76babc3db674"
     },
-    "fileId": "f1PPRyjnZFwZBtbCEsqjjh",
+    "fileId": "37ExXClmBLhrtssrMxpxA3",
     "sync": false
   }
 ]

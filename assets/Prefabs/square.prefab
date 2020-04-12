@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "bullet_friendly",
+    "_name": "New Sphere",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -27,13 +27,10 @@
       },
       {
         "__id__": 4
-      },
-      {
-        "__id__": 5
       }
     ],
     "_prefab": {
-      "__id__": 6
+      "__id__": 5
     },
     "_opacity": 255,
     "_color": {
@@ -45,8 +42,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 7,
-      "height": 7
+      "width": 0,
+      "height": 0
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -57,16 +54,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
+        34.025,
         0,
         0,
         0,
         0,
         0,
         1,
-        1,
-        1,
-        1
+        30.204,
+        30.204,
+        30.204
       ]
     },
     "_eulerAngles": {
@@ -77,13 +74,13 @@
     },
     "_skewX": 0,
     "_skewY": 0,
-    "_is3DNode": false,
+    "_is3DNode": true,
     "_groupIndex": 0,
     "groupIndex": 0,
     "_id": ""
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -92,79 +89,63 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        "__uuid__": "1977ce67-c536-4f39-896d-5f4e6e852128"
       }
     ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "b93e4c26-c107-4867-a92c-3f2275f7c95f"
+    "_mesh": {
+      "__uuid__": "3bbdb0f6-c5f6-45de-9f33-8b5cbafb4d6d"
     },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": null,
+    "_receiveShadows": false,
+    "_shadowCastingMode": 0,
+    "_enableAutoBatch": false,
+    "textures": [],
     "_id": ""
   },
   {
-    "__type__": "0cacaaL7wJMEK5ita7Mwnlq",
+    "__type__": "cc.RigidBody3D",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "pickRadius": 81,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.RigidBody",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_type": 2,
-    "_allowSleep": true,
-    "_gravityScale": 1,
-    "_linearDamping": 0,
-    "_angularDamping": 0,
-    "_linearVelocity": {
-      "__type__": "cc.Vec2",
-      "x": 400,
-      "y": 0
-    },
-    "_angularVelocity": 0,
+    "_mass": 10,
+    "_linearDamping": 0.1,
+    "_angularDamping": 0.1,
     "_fixedRotation": false,
-    "enabledContactListener": false,
-    "bullet": false,
-    "awakeOnLoad": true,
+    "_isKinematic": false,
+    "_useGravity": true,
+    "_linearFactor": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_angularFactor": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
     "_id": ""
   },
   {
-    "__type__": "cc.CircleCollider",
+    "__type__": "cc.SphereCollider3D",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "tag": 0,
-    "_offset": {
-      "__type__": "cc.Vec2",
+    "_material": null,
+    "_isTrigger": false,
+    "_center": {
+      "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0
+      "y": 0,
+      "z": 0
     },
-    "_radius": 10,
+    "_radius": 0.5,
     "_id": ""
   },
   {
@@ -173,9 +154,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "e5963676-6a7a-4e4d-ac99-76babc3db674"
+      "__uuid__": "50cc9886-d012-46fd-885f-bbbc7dce035f"
     },
-    "fileId": "37ExXClmBLhrtssrMxpxA3",
+    "fileId": "f7vyEJ3blGsbKyPisReigY",
     "sync": false
   }
 ]

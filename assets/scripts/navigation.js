@@ -5,7 +5,7 @@ cc.Class({
     },
 
     onLoad () {
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        //cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
     },
 
     onKeyDown: function(event){
@@ -22,6 +22,10 @@ cc.Class({
                 if(this.node.name != 'game'){
                     cc.director.loadScene('game');
                 }
+                break;
+            }
+            case cc.macro.KEY.r:{
+                cc.director.loadScene('game');
                 break;
             }
             case cc.macro.KEY.f3:{
